@@ -56,6 +56,12 @@ const app = Vue.createApp({
          //  alert("hai cliccato l immagine n " + index);
          this.ActiveSlide = index;
       },
+      clearInterval,
+   },
+   created() {
+      setInterval(() => {
+         this.nextSlide();
+      }, 3000);
    },
 });
 app.mount("#root");

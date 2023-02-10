@@ -54,7 +54,9 @@
    <body>
       <div id="root">
          <div class="my-carousel-container">
-            <div class="my-carousel">
+            <div
+               class="my-carousel"
+               @mouseover="clearInterval()">
                <div
                   class="my-carousel-main"
                   id="slides-container">
@@ -87,12 +89,6 @@
                   @click="prevSlide()"
                   id="prev">
                   <i class="fa-solid fa-chevron-left"></i>
-               </button>
-
-               <button
-                  class="btn btn-outline-dark"
-                  id="inverti-autoplay">
-                  <i class="fa-solid fa-repeat"></i>
                </button>
 
                <button
