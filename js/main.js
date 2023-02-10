@@ -52,6 +52,10 @@ const app = Vue.createApp({
             this.ActiveSlide++;
          }
       },
+      switchToSlide(index) {
+         //  alert("hai cliccato l immagine n " + index);
+         this.ActiveSlide = index;
+      },
    },
 });
 app.mount("#root");

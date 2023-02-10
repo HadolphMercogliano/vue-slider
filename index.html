@@ -74,7 +74,7 @@
                   <div
                      v-for="(image,index) of slides"
                      class="col thumb"
-                     @click=""
+                     @click="switchToSlide(index)"
                      :class="(index == ActiveSlide ) ? 'active':''">
                      <img :src="slides[index].image" />
                   </div>
